@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+<header>
+	<h1>JavaScript作品制作</h1>
+</header>
+<main>
+<section>
+	<h2>JavaScriptでリストを作る</h2>
+    <form action="#" name="li-form" id="form-0" data-id="0" class="ham">
+        <input type="text" name="listContent">
+        <input type="submit" value="liの追加"><br>
+        <input type="checkbox" name="checkbox" value="afterbegin" id="checkbox">
+        <label for="checkbox" class="fixed">前に挿入</label>
+    </form>
+    <button id="hamburger" class="fixed">
+    	<i class="fas fa-bars"></i>
+    </button>
+    <button id="b-0" data-id="0" class="ham">ulの追加</button>
+    <button id="fold-0" data-id="0">折りたたむ</button>
+    <ul id="ul-0" data-id="0">
+
+    </ul>
+</section>
+<hr>
+<section class="description">
+	<h2>機能一覧・使い方</h2>
+	<h4>liの追加</h4>
+	<p>
+		liに追加をクリックすると、入力内容がリストに追加されます。
+	</p>
+	<p>
+		前に挿入にチェックを入れると、リストの一番上に項目が追加されます。
+	</p>
+	<h4>リストの入れ子機能</h4>
+	<p>
+		ulを追加でリストの中にリストを作ることができます。
+	</p>
+	<h4>要素の非表示</h4>
+	<p>
+		画面右下のハンバーガーアイコンをクリックすることで、入力フォームを非表示にできます。
+	</p>
+	<p>
+		折りたたむボタンでそのulの子要素をすべて非表示にします。
+	</p>
+	<h4>順番の入れ替え</h4>
+	<p>
+		リストの順番を入れ替えたい場合は、入れ替えたい要素をクリックしてください。
+		もう一度別の場所をクリックすると、二つの要素の位置が入れ替わります。
+	</p>
+	<p>
+		ulpickボタンをクリックすると、ul全体を選択できます。ulはulと、liはli同士でなければ、入れ替えることはできません。
+		また、親子関係にある要素は入れ替えることができません。
+	</p>
+</section>
+
+</main>
+<footer>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
